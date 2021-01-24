@@ -1,0 +1,185 @@
+{
+	"info": {
+		"_postman_id": "825097fd-fb18-4ea3-a23f-150c508dc041",
+		"name": "Bakery",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"yash\",\r\n    \"email\": \"i.yashbishnoi@gmail.com\",\r\n    \"password\": \"hahahaha\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8888/register/",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"register",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"yash\",\r\n    \"password\": \"hahahaha\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/login/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetItems",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": " Token 379f338a7c70f280f8384339d62c21953966790a",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/get_items/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"get_items",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetItems Copy",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": " Token 379f338a7c70f280f8384339d62c21953966790a",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/get_items/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"get_items",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GenerateToken",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Order Item",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": " Token 379f338a7c70f280f8384339d62c21953966790a",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/get_items/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"get_items",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Order History",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": " Token 379f338a7c70f280f8384339d62c21953966790a",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"bakeryitem\": 5, \r\n    \"quantity_ordered\":\"1\",\r\n    \"payable_amount\":100\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/order_item/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"order_item",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
